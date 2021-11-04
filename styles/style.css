@@ -1,0 +1,117 @@
+:root {
+  --background-color: #7878c0;
+  --color-primary: #2532a8;
+  --color-primary-light: #2d3fe0;
+  --color-primary-dark: #121a62;
+  --color-secondary: #1e889b;
+  --color-secondary-light: #29c2dd;
+  --color-secondary-dark: #0e535f;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* GENERAL STYLES */
+body {
+  font-family: sans-serif;
+  background-color: var(--background-color);
+}
+
+h2 {
+  text-align: center;
+}
+
+.page-container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.about-me,
+.projects,
+.skills,
+.experience,
+.hobbies {
+  height: 100vh;
+  /* TODO: delete */
+  border-bottom: 3px solid black;
+}
+
+.about-me {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+img {
+  width: 50px;
+}
+
+div {
+  border: 3px solid red;
+  margin: 15px;
+}
+
+header {
+  height: 50vh;
+}
+
+section {
+  height: 100vh;
+}
+
+footer {
+  height: 5vh;
+}
+
+/* NAVIGATION */
+.main-nav {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  /* direction: column; */
+
+  background-color: azure;
+}
+
+.main-nav a {
+  text-decoration: none;
+  padding: 15px;
+}
+
+.main-nav a:hover {
+  background-color: brown;
+  color: white;
+}
+
+/* HEADER */
+
+/* ABOUT */
+
+/* PROJECTS */
+.projects-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.project {
+  background-color: blue;
+  padding: 10px;
+  width: 10vw;
+  height: 25vh;
+}
+/* SKILLS */
+
+/* EXPERIENCE */
+
+/* HOBBIES */
+
+/* FOOTER */
+.footer {
+  background-color: var(--color-primary-dark);
+  color: white;
+  text-align: center;
+  line-height: 5vh;
+}
