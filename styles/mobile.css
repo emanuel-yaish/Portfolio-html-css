@@ -200,31 +200,21 @@
   }
 
   .experience-item {
-    /* grid-template-columns: 1fr 1fr 1fr; */
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 0.5fr;
-    align-items: center;
-    justify-items: center;
+    grid-template-rows: 1fr 0.2fr;
   }
 
   .experience-item-second {
-    grid-template-rows: 0.5fr 1fr;
+    grid-template-rows: 0.2fr 1fr;
   }
 
+  .duraition-left,
   .duration-right {
     align-self: flex-start;
     justify-self: center;
   }
 
   .experience-left,
-  .duraition-left {
-    justify-self: center;
-  }
-
-  .duraition-right {
-    align-self: flex-end;
-  }
-
   .experience-right {
     justify-self: center;
   }
@@ -238,6 +228,26 @@
   .job-icon {
     display: none;
   }
+
+  .experience-left::after {
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 20px solid var(--color-overlay-text);
+    top: 99%;
+    left: 50%;
+  }
+
+  .experience-right::after {
+    top: auto;
+    bottom: 100%;
+    left: 50%;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+
+    border-bottom: 20px solid var(--color-overlay-text);
+  }
+
+  /* HOBBIES */
 
   .box {
     height: 40vh;
