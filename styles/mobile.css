@@ -1,4 +1,138 @@
 @media (max-width: 500px) {
+  /* navigation */
+  .main-nav {
+    display: none;
+  }
+  .mobile-nav {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    z-index: 1;
+    padding: 1rem 2rem;
+    width: 100vw;
+    background-color: var(--color-overlay);
+  }
+
+  .checkbox-container {
+    display: block;
+    z-index: 1;
+    right: 1rem;
+    position: relative;
+    background: #182825;
+  }
+
+  .menu-content {
+    display: flex;
+    background: var(--color-overlay);
+    color: var(--color-overlay-text);
+  }
+
+  .menu-content ul {
+    display: block;
+    padding-left: 0;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    margin: 0;
+    width: 0px;
+    height: 0px;
+    overflow: hidden;
+    transition: height 0.3s ease 0.7s, width 0.7s ease;
+  }
+
+  .menu-content ul li {
+    list-style: none;
+    cursor: pointer;
+    transition: color 0.5s, background 0.5s;
+  }
+
+  .menu-content ul li a {
+    display: block;
+    color: var(--color-overlay-text);
+    padding: 1rem 0;
+  }
+
+  /* .menu-content ul li:hover {
+    color: var(--color-overlay);
+    background: var(--color-overlay-text);
+  } */
+
+  .menu-content ul li a:hover {
+    color: var(--color-overlay);
+    background: var(--color-overlay-text);
+  }
+
+  .checkbox-trigger {
+    opacity: 0;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    left: 0px;
+    cursor: pointer;
+    z-index: 5;
+  }
+
+  .hamburger-menu,
+  .hamburger-menu::before,
+  .hamburger-menu::after {
+    display: block;
+    position: absolute;
+    background: white;
+    width: 40px;
+    height: 4px;
+    margin: 1.3em 3em;
+    transition: background 0.3s;
+  }
+
+  .hamburger-menu::before,
+  .hamburger-menu::after {
+    content: "";
+    position: absolute;
+    margin: -0.7em 0 0;
+    transition: width 0.7s ease 0.3s, transform 0.7s ease 0.3s;
+  }
+
+  .hamburger-menu::after {
+    margin-top: 0.7em;
+  }
+
+  .hamburger-menu {
+    position: relative;
+    display: block;
+    margin: 0;
+    margin-top: 1.45em;
+    margin-right: 0.35em;
+    margin-left: 0.35em;
+    margin-bottom: 1.45em;
+    transition: width 0.3s ease;
+  }
+
+  .checkbox-trigger:checked {
+    left: 202px;
+  }
+
+  .checkbox-trigger:checked + .menu-content .hamburger-menu {
+    width: 2em;
+    transition: width 0.7s ease 0.7s;
+  }
+
+  .checkbox-trigger:checked + .menu-content .hamburger-menu::before {
+    width: 1.2em;
+    transform: rotate(-35deg);
+    margin-top: -0.4em;
+  }
+
+  .checkbox-trigger:checked + .menu-content .hamburger-menu::after {
+    width: 1.2em;
+    transform: rotate(35deg);
+    margin-top: 0.4em;
+  }
+
+  .checkbox-trigger:checked + .menu-content ul {
+    width: 200px;
+    height: 100%;
+    transition: width 0.7s ease 0.3s, height 0.3s ease;
+  }
+
   /* header */
   .header-css,
   .header-html {
@@ -9,6 +143,7 @@
   .about-section {
     height: auto;
     padding: 20vh 5vh;
+    clip-path: polygon(0 4%, 100% 0%, 100% 100%, 0 95%);
   }
   .about-container {
     flex-direction: column;
@@ -25,6 +160,7 @@
   /* PROJECTS */
   .projects-section {
     padding: 10vh 5vh;
+    clip-path: polygon(0 0, 100% 5%, 100% 95%, 0 100%);
   }
 
   .projects-container {
@@ -44,6 +180,10 @@
   }
 
   /* skills */
+  .skills-section {
+    clip-path: polygon(0 5%, 100% 0%, 100% 100%, 0 95%);
+  }
+
   .skills-container {
     height: 100vh;
     flex-direction: column;

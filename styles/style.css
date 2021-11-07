@@ -1,15 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&display=swap");
 
 :root {
-  /* --background-color: #7878c0;
-  --color-primary: #2532a8;
-  --color-primary-light: #2d3fe0;
-  --color-primary-dark: #121a62;
-  --color-secondary: #1e889b;
-  --color-secondary-light: #29c2dd;
-  --color-secondary-dark: #0e535f;
-  --grey: #696969; */
-
   --color-primary: #faff00;
   --color-secondary: #ff3f00;
   --color-overlay: #8e2657;
@@ -108,6 +99,10 @@ footer {
 .main-nav a:hover {
   background-color: var(--color-overlay-text);
   color: var(--color-overlay);
+}
+
+.mobile-nav {
+  display: none;
 }
 
 /* HEADER */
