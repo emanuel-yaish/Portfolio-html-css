@@ -59,6 +59,7 @@ a {
 
 .page-container {
   background-color: blue;
+  height: 100vh;
 }
 .about-section,
 .experience-section,

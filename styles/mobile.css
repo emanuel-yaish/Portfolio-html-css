@@ -191,18 +191,52 @@
   }
 
   /* EXPERIENCE */
+  .experience-section {
+    height: auto;
+  }
+
   .experience-container::after {
     display: none;
   }
 
   .experience-item {
-    grid-template-columns: 1fr 1fr 1fr;
+    /* grid-template-columns: 1fr 1fr 1fr; */
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 0.5fr;
+    align-items: center;
+    justify-items: center;
+  }
+
+  .experience-item-second {
+    grid-template-rows: 0.5fr 1fr;
+  }
+
+  .duration-right {
+    align-self: flex-start;
+    justify-self: center;
+  }
+
+  .experience-left,
+  .duraition-left {
+    justify-self: center;
+  }
+
+  .duraition-right {
+    align-self: flex-end;
+  }
+
+  .experience-right {
+    justify-self: center;
   }
 
   .job-keywords {
     font-size: 1rem;
     padding: 0.1rem;
     margin: 1rem 0.1rem;
+  }
+
+  .job-icon {
+    display: none;
   }
 
   .box {
