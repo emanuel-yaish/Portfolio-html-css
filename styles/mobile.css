@@ -1,4 +1,4 @@
-@media (max-width: 500px) {
+@media (max-width: 768px) {
   /* navigation */
   .main-nav {
     display: none;
@@ -139,6 +139,10 @@
     display: none;
   }
 
+  .img-css {
+    width: 100%;
+  }
+
   /* about */
   .about-section {
     height: auto;
@@ -248,10 +252,22 @@
   }
 
   /* HOBBIES */
+  .hobbies-section {
+    clip-path: polygon(0 2%, 100% 0%, 100% 100%, 0 100%);
+    transform: translateY(-50vh);
+  }
 
   .box {
     height: 40vh;
   }
+
+  .box:hover {
+    position: static;
+    transform: unset;
+    z-index: unset;
+    border: unset;
+  }
+
   .gallery-container {
     height: auto;
     grid-template-areas:
@@ -270,4 +286,8 @@
       "img13"
       "img14";
   }
+}
+
+.footer {
+  transform: translateY(-50vh);
 }
