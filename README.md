@@ -20,5 +20,5 @@ This portfolio built with html and css only as assignment in the appleseeds boot
 https://angry-bartik-0503ed.netlify.app/
 
 <a href="https://angry-bartik-0503ed.netlify.app/" target="_blank">
-  <img src="assets/images/Portfolio-html-css.png.png">
+  <img src="assets/images/Portfolio-html-css.png">
 </a>
